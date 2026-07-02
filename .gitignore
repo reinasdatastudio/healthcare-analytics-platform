@@ -1,17 +1,4 @@
 # -----------------------------
-# R
-# -----------------------------
-.Rhistory
-.RData
-.Ruserdata
-.Rproj.user/
-
-# R Markdown / Quarto cache
-*_cache/
-.quarto/
-.quarto_idx/
-
-# -----------------------------
 # Python
 # -----------------------------
 __pycache__/
@@ -54,15 +41,19 @@ Thumbs.db
 *.tmp
 *.bak
 
------------------------------
-Data
------------------------------
+# -----------------------------
+# Data
+# -----------------------------
 data/synthea_csv/
 data/*.csv
 History files
 .Rhistory
 .Rapp.history
 
+
+# -----------------------------
+# R
+# -----------------------------
 # Session Data files
 .RData
 .RDataTmp
