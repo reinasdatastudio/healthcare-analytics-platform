@@ -171,6 +171,7 @@ healthcare-analytics-platform/
 ├── README.md
 ├── LICENSE
 ├── .gitignore
+├── .gitattributes
 │
 ├── data/
 │   └── README.md
@@ -182,7 +183,8 @@ healthcare-analytics-platform/
 │   ├── 03_disease_analysis.sql
 │   ├── 04_medication_analysis.sql
 │   ├── 05_clinical_observations.sql
-│   └── 99_key_findings.md
+│   ├── 99_key_findings.md
+│   └── create_tables.sql
 │
 ├── r/
 ├── quarto/
