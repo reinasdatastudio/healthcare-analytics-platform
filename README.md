@@ -158,8 +158,8 @@ Skills demonstrated
 
 - [x] PostgreSQL database
 - [x] SQL analytics
-- [ ] R statistical analysis
-- [ ] Quarto reporting
+- [x] R statistical analysis
+- [x] Quarto reporting
 - [ ] Interactive Shiny dashboard
 - [ ] Machine learning (Python)
 
@@ -187,7 +187,15 @@ healthcare-analytics-platform/
 │   └── create_tables.sql
 │
 ├── r/
+│   ├── 01_connect_postgres.R
+│   ├── 02_patient_risk_analysis.R
+│   ├── 03_disease_epidemiology.R
+│   ├── 04_healthcare_utilisation.R
+│   ├── 05_statistical_modelling.R
+│   ├── 06_publication_visualisation.R
 ├── quarto/
+│   ├── Healthcare_Analytics_Report.html
+│   ├── Healthcare_Analytics_Report.qmd
 ├── shiny/
 ├── python/
 └── images/
