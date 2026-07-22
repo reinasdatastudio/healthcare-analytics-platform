@@ -90,3 +90,25 @@ CREATE VIEW encounter_summary AS
 	SELECT patient, COUNT(*) AS encounter_count
 	FROM encounters
 	GROUP BY patient;
+
+-- machine_learning
+CREATE OR REPLACE VIEW ml_dataset AS
+WITH bmi AS (
+    SELECT patient, MAX(value::NUMERIC) AS bmi
+    FROM observations
+    WHERE description ILIKE '%Body mass index%'
+      AND type = 'numeric'
+    GROUP BY patient
+)
+SELECT
+    p.id,
+    EXTRACT(YEAR FROM AGE(COALESCE(p.deathdate, CURRENT_DATE), p.birthdate)) AS age,
+    p.gender,
+	b.bmi,
+    e.encounter_count,
+    r.diabetes,
+	r.hypertension
+FROM patients p
+LEFT JOIN patient_risk_profile r ON p.id = r.patient
+LEFT JOIN encounter_summary e ON p.id = e.patient
+LEFT JOIN bmi b ON p.id = b.patient;

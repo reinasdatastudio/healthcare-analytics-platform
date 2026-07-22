@@ -1,0 +1,6 @@
+Feature,Importance
+numeric__age,0.4004464782535134
+numeric__bmi,0.2800859032594779
+numeric__encounter_count,0.2514238283464989
+binary__hypertension,0.05084222272628721
+categorical__gender_M,0.01720156741422255
