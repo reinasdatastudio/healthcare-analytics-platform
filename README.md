@@ -4,6 +4,8 @@ An end-to-end healthcare analytics project built using synthetic Electronic Heal
 
 The project demonstrates a realistic healthcare analytics workflow, from relational database design and SQL feature engineering to statistical analysis, interactive dashboards and machine learning using PostgreSQL, R, Quarto, Shiny and Python.
 
+Full Report:  https://reinasdatastudio.github.io/healthcare-analytics-platform/Healthcare_Analytics_report.html
+
 ## Motivation
 
 Healthcare organisations generate vast amounts of structured clinical data every day, yet transforming that data into actionable insights requires expertise across databases, analytics and machine learning.
@@ -161,7 +163,7 @@ Skills demonstrated
 - [x] R statistical analysis
 - [x] Quarto reporting
 - [ ] Interactive Shiny dashboard
-- [ ] Machine learning (Python)
+- [x] Machine learning (Python)
 
 # Repository Structure
 
@@ -193,11 +195,17 @@ healthcare-analytics-platform/
 │   ├── 04_healthcare_utilisation.R
 │   ├── 05_statistical_modelling.R
 │   ├── 06_publication_visualisation.R
+|
 ├── quarto/
 │   ├── Healthcare_Analytics_Report.html
 │   ├── Healthcare_Analytics_Report.qmd
 ├── shiny/
 ├── python/
+│   ├── 01_data_loading.ipynb
+│   ├── 02_data_preprocessing.ipynb
+│   ├── 03_logistic_regression.ipynb
+│   ├── 04_random_forest.ipynb
+│   └── 05_model_comparison.ipynb
 └── images/
 ```
 
@@ -205,11 +213,7 @@ healthcare-analytics-platform/
 
 The next stage of this project will focus on:
 
-- Connecting PostgreSQL directly to R using DBI/RPostgres
-- Creating publication-quality visualisations
-- Building reproducible Quarto reports
 - Developing an interactive Shiny dashboard
-- Applying machine learning models using Python
 
 # Author
 
